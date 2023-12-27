@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Films</title>
+</head>
+<body>
+<h2>Film List</h2>
+<ul>
+    <li th:each="film : ${films}">
+        <span th:text="${film.firstName} ?: 'N/A'"></span>
+    </li>
+    <li th:each="film : ${films}">
+        <span th:text="${film.lastName} ?: 'N/A'"></span>
+    </li>
+    <li th:each="film : ${films}">
+        <span th:text="${film.Rating} ?: 'N/A'"></span>
+    </li>
+    <li th:each="film : ${films}">
+        <span th:text="${film.Year} ?: 'N/A'"></span>
+    </li>
+</ul>
+</body>
+</html>
